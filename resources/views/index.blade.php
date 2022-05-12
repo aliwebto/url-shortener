@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alireza Zarei URL Shortner</title>
+    <title>Alireza Zarei URL Shortener</title>
     <style>
         main {
             background-color: #264653;
@@ -107,6 +107,39 @@
         }
 
     </style>
+    <style>
+        footer{display:block;}
+        .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+        @media (min-width:576px){
+            .container{max-width:540px;}
+        }
+        @media (min-width:768px){
+            .container{max-width:720px;}
+        }
+        @media (min-width:992px){
+            .container{max-width:960px;}
+        }
+        @media (min-width:1200px){
+            .container{max-width:1140px;}
+        }
+        .py-3{padding-top:1rem!important;}
+        .py-3{padding-bottom:1rem!important;}
+        .mt-auto{margin-top:auto!important;}
+        .text-muted{color:#6c757d!important;}
+        @media print{
+            *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+            .container{min-width:992px!important;}
+        }
+        .container{width:auto;max-width:680px;padding:0 15px;}
+        .footer{background-color:#f5f5f5;}
+        *,::after,::before{box-sizing:border-box;}
+        a{color:#007bff;text-decoration:none;background-color:transparent;}
+        a:hover{color:#0056b3;text-decoration:underline;}
+        @media print{
+            *,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+            a:not(.btn){text-decoration:underline;}
+        }
+    </style>
 </head>
 <body>
 <main>
@@ -133,6 +166,12 @@
     </div>
 
 </main>
+
+<footer class="footer mt-auto py-3">
+    <div class="container" style="text-align: center">
+        <span class="text-muted">URL Shortener laravel application by <a href="https://github.com/aliwebto">alireza zarei</a> . Made by ❤</span>
+    </div>
+</footer>
 <!--App script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 
