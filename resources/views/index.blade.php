@@ -173,7 +173,7 @@
 
     /* function to get shortened url with input "url" with fetch and deal with error */
     const shorten = (input) => {
-        fetch("URLHERE", {
+        fetch("{{ route('link-shorten.api.create') }}", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -183,7 +183,7 @@
             .then(handleError)
             .then(response => response.json())
             .then((json) => {
-                shortUrl.innerHTML = json.link;
+                shortUrl.innerHTML = json.response.link;
                 showResult();
             })
             .catch(error => {

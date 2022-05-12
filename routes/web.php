@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[\App\Http\Controllers\LinkShortenController::class,'index'])->name('link-shorten.index');
+Route::get('/l/{hash}',[\App\Http\Controllers\LinkShortenController::class,'redirect'])->name('link-shorten.redirect');
